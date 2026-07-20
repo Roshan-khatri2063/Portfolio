@@ -1,6 +1,3 @@
-// Central place for content that repeats across components (Navbar, Footer,
-// Hero, page <title>/meta tags). Edit the values below with your real
-// details — nothing else in the codebase should hardcode this data.
 export const siteConfig = {
   name: 'Your Name',
   role: 'Full Stack Software Engineer',
