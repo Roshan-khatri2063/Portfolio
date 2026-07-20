@@ -6,8 +6,8 @@ export const siteConfig = {
   location: 'City, Country',
 
   social: {
-    github: 'https://github.com/your-username',
-    linkedin: 'https://linkedin.com/in/your-username',
+    github: 'https://github.com/Roshan-khatri2063',
+    linkedin: 'www.linkedin.com/in/roshan-khatri-645172396',
     twitter: 'https://x.com/your-username',
     instagram: 'https://instagram.com/your-username',
     facebook: 'https://facebook.com/your-username',

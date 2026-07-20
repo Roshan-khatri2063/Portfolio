@@ -1,4 +1,6 @@
-function Button({ children, href, variant = 'primary', className = '', ...props }) {
+import { Link } from 'react-router-dom';
+
+function Button({ children, href, to, variant = 'primary', className = '', ...props }) {
   const base =
     'inline-flex items-center justify-center gap-2 rounded-sm px-5 py-2.5 ' +
     'font-mono text-sm uppercase tracking-wide transition-colors ' +
@@ -11,6 +13,14 @@ function Button({ children, href, variant = 'primary', className = '', ...props 
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;
+
+  if (to) {
+    return (
+      <Link to={to} className={classes} {...props}>
+        {children}
+      </Link>
+    );
+  }
 
   if (href) {
     return (
