@@ -13,9 +13,10 @@ app.use(cors());
 
 app.use (express.json());
 
-app.get ('/api/health', healthRoutes);
+app.use ('/api/health', healthRoutes);
 
 app.use(notFound);
+
 app.use(errorHandler);
 
 export default app;
